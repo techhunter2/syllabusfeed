@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+       <script src="js/register.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+          <script >checkLogin();</script>
+        <title>Registration-Form</title>
+    </head>
+    <body class="bg-nav">
+        <nav class="navbar ">
+            <a href ="" class="navbar-brand text-light">Welcome</a>
+        </nav>
+        <div class="container h-75">
+                <div class="col-sm-12">
+                    <div class="card mt-100">
+                        <div class="card-body">
+                            <form class="form">
+                                 <div id="dstatus" style="visibility: hidden; display:inline;">
+                                    <p id="pstatus" style="color:red;">Invalid Email or Password!!</p>
+                                </div>
+                                <h1 align="center"  style="color:#ff0084;">REGISTER</h1>
+                                <label>Name</label>
+                                <input type="text" class="form-control" name="uname" placeholder="Enter Your Name Here" id="uname"><br>
+                                <!-- <label>Email</label><br>
+                                <input type="email" class="form-control" name="uemail" id="uemail"><br> -->
+                                <label>Mobile No.</label>
+                                <input type="number" class="form-control" name="umobile" placeholder="Enter Your Mobile Number" id="umobile"><br>
+                                <label>University Roll</label>
+                                <input type="text" class="form-control" name="upass" placeholder="Enter Your Registration Number" id="upass"><br>
+                                <label>Re-University Roll</label>
+                                <input type="password" class="form-control" name="urepass" placeholder="Re Enter Your Registration number" id="urepass"><br>
+                                <input type="button" class="btn btn-primary btn-block btn-lg" value="Register" id="register" onclick="saveUser()">
+                            </form>
+                            <p>Already a memeber? <a href="index.html">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <footer class="bg-light text-center text-lg-start">
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  © 2022 Copyright:
+                  <a class="text-dark" href="https://github.com/techhunter2">Techhunter(Nitesh)</a>
+                </div>
+              </footer>
+    </body>
+</html>

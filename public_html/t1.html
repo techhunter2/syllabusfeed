@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/logout.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    <!-- <script >checkLogin();</script> -->
+    <title>Feedback</title>
+</head>
+  <body>
+    <div
+    class="navbar navbar-expand-md navbar-dark bg-dark mb-4 bg-nav align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
+    role="navigation"
+  >
+    <p class="navbar-brand">Syllabus Feedback System</p>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto"></ul>
+      <nav class="form-inline mt-2 mt-md-0">
+        <a class="btn btn-outline-primary" onclick="deleteSession()"
+          >LogOut</a
+        >
+      </nav>
+    </div>
+  </div>
+      <div class="container" >
+        <div class="text-center mt-5 ">
+            <h5>Data Analysis And Visualization</h5>
+            <p>PCC-DS-601</p>
+        </div>
+        <div class="container">
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Imporatnt!</strong>  Rate 1 for Poor, 2 for Fair, 3 for Good, 4 for Very Good, 5 for Excellent.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+        <form id="feedback_data" method="post">
+            <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                   Q-1. Relevance of the curriculum.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="5" id="ques1" oninput="(!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div><br>
+
+              <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                   Q-2. Promotion of internship, student exchange, and field visit opportunities.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="5" id="ques2" oninput="(!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div> <br>
+              <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                  Q-3. Facilitation of cognitive, social, and emotional growth.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="5" id="ques3" oninput="(!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                  Q-4.  Provision for student engagement in monitoring, review, and continuous quality improvement of the teaching-learning process.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="5" id="ques4" oninput="(!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                  Q-5.  Inculcation of soft skills, life skills, and employability skills.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="5" id="ques5" oninput="(!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                  Q-6.  Frequency of curriculum revision.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="5" id="ques6" oninput="(!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div>
+              <br>
+              <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                   Q-7. Quality of academic advising.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="5" id="ques7" oninput="(!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div><br>
+              <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                   Q-8. Level of student involvement in curriculum development and improvement.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="5" id="ques8" oninput="(!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div><br>
+              <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                   Q-9. Clarity of expected competencies, course outcomes, and program outcomes.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="05" id="ques9" oninput="(!validity.rangeOverflow||(value=5)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div><br>
+              <div class="card border-secondary mb-3">
+                <div class="card-header text-primary">
+                   Q-10. Effectiveness of mentoring in providing guidance and support.
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                      <input type="number" min="1" max="05" id="ques10" oninput="(!validity.rangeOverflow||(value=05)) && (!validity.rangeUnderflow||(value=1)) &&
+                      (!validity.stepMismatch||(value=parseInt(this.value)));">
+                    </div>
+                </div>
+              </div><br>
+              <input type="button" class="btn btn-primary btn-block mb-4" id="empSave" value="Save Details" onclick="saveEmployee();">
+          </form>
+  </div><br><br>
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="https://github.com/techhunter2">Techhunter(Nitesh)</a>
+    </div>
+  <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+  </footer>
+</html>
