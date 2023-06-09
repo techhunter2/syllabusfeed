@@ -125,7 +125,7 @@ function saveEmployee() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "t1");
+    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "Data Analysis");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
     var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
@@ -140,7 +140,7 @@ function saveEmployee2() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "t2");
+    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "ML");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
     var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
@@ -155,7 +155,7 @@ function saveEmployee3() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "t3");
+    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "CN");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
     var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
@@ -170,7 +170,7 @@ function saveEmployee4() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "t4");
+    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "ISA");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
     var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
@@ -185,7 +185,7 @@ function saveEmployee5() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "t5");
+    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "SE");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
     var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
@@ -201,7 +201,7 @@ function saveEmployee6() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "t6");
+    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "SK");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
     var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
@@ -217,7 +217,7 @@ function saveEmployee7() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "t7");
+    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "DAL");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
     var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
@@ -233,7 +233,7 @@ function saveEmployee8() {
     if (jsonStr === "") {
         return;
     }
-    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "t8");
+    var putReqStr = createPUTRequest(token,jsonStr, "3rdsyllabus", "CNL");
     // alert(putReqStr);
     jQuery.ajaxSetup({ async: false });
     var resultObj = executeCommand(putReqStr,"http://api.login2explore.com:5577", "/api/iml");
