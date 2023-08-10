@@ -193,7 +193,7 @@ function saveEmployee5() {
     jQuery.ajaxSetup({ async: true });
     resetForm();
     updateUser();
-    var url= "t6.html"; 
+    var url= "final.html"; 
     window.location = url;
 }
 function saveEmployee6() {
